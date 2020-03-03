@@ -1,0 +1,22 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t nomanaadma/react-test -f ./client/dockerfile.dev ./client
+
+scripts:
+    - docker run -e CI=true nomanaadma/react-test npm test -- --coverage
+
+after_success:
+    - docker build -t nomanaadma/multi-client ./client
+    - docker build -t nomanaadma/multi-nginx ./nginx
+    - docker build -t nomanaadma/multi-server ./server
+    - docker build -t nomanaadma/multi-worker ./worker
+    # Log in to the docker CLI
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    # Take those image and push them to docker hub
+    - docker push nomanaadma/multi-client
+    - docker push nomanaadma/multi-nginx
+    - docker push nomanaadma/multi-server
+    - docker push nomanaadma/multi-worker
