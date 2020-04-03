@@ -1,21 +1,32 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background: #dddddd47;
+}
 .App {
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #0e0e0e;
+  height: 32px;
+  padding: 10px 20px 18px;
   color: white;
+  box-shadow: 0px 9px 10px #0016522e;
+  margin-bottom: 40px;
 }
 
 .App-title {
-  font-size: 1.5em;
+  margin: 0;
+  font-size: 15px;
+  margin-top: 12px;
+  text-transform: uppercase;
 }
 
 .App-intro {
@@ -25,4 +36,85 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.App-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header ul li {
+  float: left;
+}
+
+ul.App-title {
+  float: left;
+}
+
+ul.App-navigation {
+  float: right;
+}
+
+ul.App-navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px
+}
+
+ul.App-navigation li {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.factor-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.factor-form input {
+  border: 0;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #bfbfbf;
+  margin-left: 35px;
+}
+
+.factor-form button {
+  background: #00BCD4;
+  border: 0;
+  padding: 5px 11px;
+  color: #fff;
+}
+
+.seenIndexes {
+  background-color: white;
+  padding: 10px 10px 8px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  min-width: 17px;
+  display: inline-block;
+}
+
+table {
+  margin: 0 auto;
+  min-width: 380px;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #00bcd4;
+  color: white;
 }
