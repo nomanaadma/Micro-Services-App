@@ -54,11 +54,13 @@ class Fac extends Component {
 
 
     return <table>
-      <tr>
+      <thead><tr>
         <th>Index</th>
         <th>Caculated Value</th>
-      </tr>
+      </tr></thead>
+      <tbody>
       {entries}
+      </tbody>
     </table>
   }
 
