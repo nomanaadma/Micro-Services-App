@@ -36,7 +36,7 @@ class Fac extends Component {
 
   renderSeenIndexes() {
     return this.state.seenIndexes.map(({ number }) => {
-      return (<span className="seenIndexes">{number}</span>)
+      return (<span className="seenIndexes" key={number}>{number}</span>)
     });
   }
 

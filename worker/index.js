@@ -9,7 +9,7 @@ const redisClient = redis.createClient({
 const sub = redisClient.duplicate();
 
 function fac(index) {
-  return index ? index * factorial(index - 1) : 1;
+  return index ? index * fac(index - 1) : 1;
 }
 
 sub.on('message', (channel, message) => {
