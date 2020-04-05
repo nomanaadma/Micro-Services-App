@@ -32,7 +32,7 @@
 
 Created using [App Diagram](https://app.diagrams.net/)
 <div align="center">  
-  <img alt="Live Gold Rate Widget 1" src="screenshots/Application Architechture.png"/>
+  <img alt="Application Architechture" src="screenshots/Application Architechture.png"/>
 </div>
 
 ### Development Architecture
@@ -49,13 +49,13 @@ and you are good to go visit http://localhost:3050
 
 Created using [App Diagram](https://app.diagrams.net/)
 <div align="center">  
-  <img alt="Live Gold Rate Widget 1" src="screenshots/Development Architecture.png"/>
+  <img alt="Development Architecture" src="screenshots/Development Architecture.png"/>
 </div>
 
 ### Deployment Architecture
 Created using [App Diagram](https://app.diagrams.net/)
 <div align="center">  
-  <img alt="Live Gold Rate Widget 1" src="screenshots/Deployment Architecture.png"/>
+  <img alt="Deployment Architecture" src="screenshots/Deployment Architecture.png"/>
 </div>
 
 #### Steps
