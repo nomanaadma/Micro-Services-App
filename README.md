@@ -26,7 +26,7 @@
 * [Amazon S3](https://aws.amazon.com/s3/) - Storage on Production
 * [Amazon RDS](https://aws.amazon.com/rds/) - Database on Production
 * [Amazon ElastiCache](https://aws.amazon.com/elasticache/) - Memcached on Production
-* [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) - Build, Deploy, And Manage App
+* [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) - Host And Manage App
 
 ### Application Architecture
 
